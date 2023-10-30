@@ -20,7 +20,7 @@ namespace Check_Dublicate
             {
                 if( !File.Exists( _dbPath ) )
                     SQLiteConnection.CreateFile( _dbPath );
-                
+
                 using( var connection = new SQLiteConnection( _connectionString ) )
                 {
                     connection.Open();

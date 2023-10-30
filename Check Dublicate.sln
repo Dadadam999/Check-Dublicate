@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Check Dublicate", "Check Dublicate.csproj", "{6B92AE07-4CB9-48B2-B3E3-F88677B2D34F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Check Dublicate", "Check Dublicate.csproj", "{6B92AE07-4CB9-48B2-B3E3-F88677B2D34F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

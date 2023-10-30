@@ -15,8 +15,17 @@ namespace Check_Dublicate
             processThread = new Thread( ProcessFile );
         }
 
-        private void Main_FormClosing( object sender, FormClosingEventArgs e ) => processThread.Abort();
-
+        private void Main_FormClosing( object sender, FormClosingEventArgs e )
+        {
+            try
+            {
+                processThread.Abort();
+            }
+            catch
+            {
+                _log.AppendText( $"Закрытие потоков и выход из программы!" );
+            }
+        }
         private void showOpenDialogClick( object sender, EventArgs e ) => _openDialog.ShowDialog();
 
         private void filePathClick( object sender, EventArgs e ) => _openDialog.ShowDialog();
